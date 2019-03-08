@@ -24,4 +24,21 @@
 	</context:component-scan>
 
 
+	<!--Oracle DataSource를 bean으로 등록 -->
+	<bean id="oracleDatasource"
+		class="oracle.jdbc.pool.OracleDataSource" destroy-method="close" >
+		
+		</bean>
+
+<!--MyBatis SqlSessionFactory Bean-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="oracleDatasource"/><!--세터호출-->
+        <property name="configLocation" value="classpath:mybatis/configuration.xml"/>
+    </bean>
+
+    <!--MyBatis SqlSessionTemplate-->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
 </beans>

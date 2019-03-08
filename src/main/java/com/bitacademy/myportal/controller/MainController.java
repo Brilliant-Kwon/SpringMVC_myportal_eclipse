@@ -30,18 +30,18 @@ public class MainController {
         return "<h1>Exception Test</h1>";
     }
 
-    //Exception Handler
-    @ExceptionHandler(RuntimeException.class)
-    @ResponseBody
-    public String handleControllerExcept(RuntimeException e) {
-        return "Exception: "+e.getMessage();
-    }
-    
-    //Exception Handler v2
-    @ExceptionHandler(DaoException.class)
-    public String handlerControllerExcept(DaoException e, Model model) {
-        model.addAttribute("name", e.getClass().getSimpleName());
-        model.addAttribute("message", e.getMessage());
-        return "exception/exception";
-    }
+//    //Exception Handler
+//    @ExceptionHandler(RuntimeException.class)
+//    @ResponseBody
+//    public String handleControllerExcept(RuntimeException e) {
+//        return "Exception: "+e.getMessage();
+//    }
+//    
+//    //Exception Handler v2
+//    @ExceptionHandler(DaoException.class)
+//    public String handlerControllerExcept(DaoException e, Model model) {
+//        model.addAttribute("name", e.getClass().getSimpleName());
+//        model.addAttribute("message", e.getMessage());
+//        return "exception/exception";
+//    }
 }

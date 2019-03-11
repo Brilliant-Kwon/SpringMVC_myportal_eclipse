@@ -22,8 +22,7 @@
             <div id="user">
                 <%--Login form--%>
                 <form id="Login-form" name="Loginform" method="post"
-                      action="<%=request.getContextPath()%>/users">
-                    <input type="hidden" name="a" value="login">
+                      action="<%=request.getContextPath()%>/users/login">
                     <label class="block-label" for="email">이메일</label>
                     <input type="text" name="email">
                     <label class="block-label" for="password">비밀번호</label>

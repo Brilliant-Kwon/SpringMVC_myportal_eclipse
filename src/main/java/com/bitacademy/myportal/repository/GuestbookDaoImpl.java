@@ -19,12 +19,12 @@ public class GuestbookDaoImpl implements GuestbookDao{
 	}
 
 	@Override
-	public int insert(GuestbookVo vo) {
-		return 0;
-	}
+    public int insert(GuestbookVo vo) {
+        return sqlSession.insert("guestbook.insert", vo);
+    }
 
-	@Override
-	public int delete(GuestbookVo vo) {
-		return 0;
-	}
+    @Override
+    public int delete(GuestbookVo vo) {
+        return sqlSession.delete("guestbook.delete", vo);
+    }
 }

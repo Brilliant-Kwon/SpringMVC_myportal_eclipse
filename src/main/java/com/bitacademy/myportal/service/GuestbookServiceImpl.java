@@ -20,11 +20,13 @@ public class GuestbookServiceImpl implements GuestbookService {
 
     @Override
     public boolean writeMessage(GuestbookVo vo) {
-        return false;
+        int insertedCount = guestbookDaoImpl.insert(vo);
+        return insertedCount == 1;
     }
 
     @Override
     public boolean deleteMessage(GuestbookVo vo) {
-        return false;
+        int deletedCount = guestbookDaoImpl.delete(vo);
+        return deletedCount == 1;
     }
 }

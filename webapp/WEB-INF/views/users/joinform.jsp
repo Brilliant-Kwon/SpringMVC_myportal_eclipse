@@ -20,7 +20,7 @@
         <div id="content">
             <!-- Content 영역 -->
             <div id="user">
-                <form id="join-form" name="joinform" method="post" action="<%=request.getContextPath()%>/users">
+                <form id="join-form" name="joinform" method="post" action="<%=request.getContextPath()%>/users/join">
                     <%--입력폼--%>
                     <label class="block-label" for="name">이름</label>
                     <input type="text" name="name" id="name">
@@ -30,8 +30,6 @@
 
                     <label class="block-label" for="email">이메일</label>
                     <input type="text" name="email" id="email">
-
-                    <input type="hidden" name="a" value="join">
 
                     <fieldset>
                         <legend>성별</legend>

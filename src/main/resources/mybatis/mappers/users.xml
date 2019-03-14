@@ -19,7 +19,7 @@
         ]]>
     </insert>
 
-    <select id="selectEmail" parameterType="String" resultType="userVo">
+    <select id="check" parameterType="String" resultType="userVo">
         <![CDATA[
 
                   select no, name, password,email, gender,created_at from users where email=#{email}
@@ -30,8 +30,6 @@
 
     <select id="selectUser" parameterType="map" resultType="userVo">
         <![CDATA[
-
-
 
                         select no, name, password,email, gender,created_at from users where email=#{email} and password=#{password}
 

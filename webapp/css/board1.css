@@ -72,7 +72,7 @@ input#kwd	{
 	width: 480px;
 }
 
-.board-form .tbl-ex textarea#contentarea {
+.board-form .tbl-ex textarea#content {
 	width: 470px;
 	height: 200px;
 	padding: 10px;
@@ -94,8 +94,7 @@ div.bottom {
 	margin:20px auto;
 }
 
-div.bottom a {
-	float: right;
+div.bottom a { 
 	text-decoration:none; 
 	dispaly:block;
 }

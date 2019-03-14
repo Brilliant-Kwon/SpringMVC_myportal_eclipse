@@ -61,17 +61,17 @@
                                 <input type="submit" value="삭제">
                             </form>
                         </td>
-                        <td align="center">
-                            <form method="post" action="<%=request.getContextPath()%>/modify.jsp"
-                                  style="margin-top:auto;margin-bottom:auto;">
-                                <input type="hidden" name="no">
-                                <input type="hidden" name="pass">
-                                <input type="submit" value="수정">
-                            </form>
-                        </td>
+                        <%--<td align="center">--%>
+                            <%--<form method="post" action="<%=request.getContextPath()%>/modify.jsp"--%>
+                                  <%--style="margin-top:auto;margin-bottom:auto;">--%>
+                                <%--<input type="hidden" name="no">--%>
+                                <%--<input type="hidden" name="pass">--%>
+                                <%--<input type="submit" value="수정">--%>
+                            <%--</form>--%>
+                        <%--</td>--%>
                     </tr>
                     <tr>
-                        <td colspan=5>${vo.content}
+                        <td colspan=4>${vo.content}
                         </td>
                     </tr>
                 </table>

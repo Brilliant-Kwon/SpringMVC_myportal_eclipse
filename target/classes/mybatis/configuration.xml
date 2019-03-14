@@ -9,10 +9,13 @@
                    type="com.bitacademy.myportal.vo.GuestbookVo"/>
         <typeAlias alias="userVo"
                    type="com.bitacademy.myportal.vo.UserVo"/>
+                   <typeAlias alias="boardVo"
+                   type="com.bitacademy.myportal.vo.BoardVo"/>
     </typeAliases>
 
     <mappers>
         <mapper resource="mybatis/mappers/guestbook.xml"/>
         <mapper resource="mybatis/mappers/users.xml"/>
+        <mapper resource="mybatis/mappers/board.xml"/>
     </mappers>
 </configuration>
